@@ -19,28 +19,28 @@ import { FreeMode, Pagination } from 'swiper';
 const serviceData = [
   {
     icon: <RxCrop />,
-    title: 'Branding',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-  },
-  {
-    icon: <RxPencil2 />,
-    title: 'Design',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-  },
-  {
-    icon: <RxDesktop />,
-    title: 'Development',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    title: 'Machine Learning Model Development',
+    description: 'I design and implement custom machine learning models.',
   },
   {
     icon: <RxReader />,
-    title: 'Copywriting',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    title: 'Predictive Analytics Solutions',
+    description: 'Leverage the power of data to make informed decisions.',
+  },
+  {
+    icon: <RxPencil2 />,
+    title: 'Data Visualization ',
+    description: 'I help you communicate your data-driven insights effectively.',
+  },
+  {
+    icon: <RxDesktop />,
+    title: 'Web Development',
+    description: 'I specialize in developing custom websites.',
   },
   {
     icon: <RxRocket />,
-    title: 'SEO',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    title: 'UI/UX Design',
+    description: 'Elevate your digital presence with user-centric design.',
   },
 ];
 
@@ -70,7 +70,7 @@ const ServiceSlider = () => {
           <div className=' bg-[rgba(65,47,123,0.15)] h-max rounded-lg px-6 py-8 flex sm:flex-col gap-x-6 sm:gap-x-0 group cursor-pointer hover:bg-[rgba(89,65,169,0.15)] transition-all duration-300]'>
             <div className=' text-4xl text-accent mb-4'>{item.icon}</div>
             <div className=' mb-8'>
-              <div className=' mb-2 text-lg text-black'>{item.title}</div>
+              <div className=' mb-2 text-lg font-semibold text-black'>{item.title}</div>
               <p className=' max-w-[350px] leading-normal text-black'>{item.description}</p>
             </div>
             <div className=' text-3xl text-black'>

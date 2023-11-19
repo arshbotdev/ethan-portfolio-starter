@@ -7,14 +7,23 @@ import {useRouter} from 'next/router';
 
 import {AnimatePresence, motion} from 'framer-motion';
 
+// App.js
+import React from 'react';
+import '../styles/globals.css'
+import '../components/InvisibleBackgroundCursor.css'
+
+
+
+
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
   return (
+  
   <Layout>
     <AnimatePresence mode='wait'>
       <motion.div key={router.route} className='h-full'>
         <Transition/>
-        <Component {...pageProps} />;
+        <Component {...pageProps} />
       </motion.div>
     </AnimatePresence>
   </Layout>

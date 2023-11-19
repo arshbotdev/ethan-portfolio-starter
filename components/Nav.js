@@ -12,7 +12,6 @@ export const navData = [
   { name: 'contact', path: '/contact', icon: <HiEnvelope /> },
 ];
 
-// ... (previous code)
 
 const Nav = () => {
   const router = useRouter();
