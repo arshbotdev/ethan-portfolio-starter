@@ -18,7 +18,7 @@ const Services = () => {
               My Services <span className=' text-accent'>.</span>
             </motion.h2>
             <motion.p variants={fadeIn('down',0.3)} initial="hidden" animate="show" exit="hidden" className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:ml-16 text-black/90">
-              Here are the few fields where I can assist you and provide yo with a better result.
+              Curious about how I can <span className=' text-accent'>assist your business?</span> Here are a few areas where I <span className=' text-accent'>excel</span>, ensuring you receive the best possible outcomes.
             </motion.p>
           </div>
           <motion.div variants={fadeIn('down', 0.6)} initial='hidden' animate='show' exit='hidden' className=' w-full xl:max-w-[65%]'>
