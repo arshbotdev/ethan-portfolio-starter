@@ -8,7 +8,7 @@ import {useRouter} from 'next/router';
 import {AnimatePresence, motion} from 'framer-motion';
 
 // App.js
-import React from 'react';
+import React, { useEffect } from 'react';
 import '../styles/globals.css'
 import '../components/InvisibleBackgroundCursor.css'
 

@@ -1,4 +1,5 @@
 import {Sora} from '@next/font/google'
+import React, { useEffect } from 'react';
 
 const sora= Sora({
   subsets: ['latin'],
@@ -11,6 +12,14 @@ import Header from '../components/Header'
 import InvisibleBackgroundCursor from '../components/InvisibleBackgroundCursor'
 
 const Layout = ({children}) => {
+
+  useEffect(() => {
+    document.documentElement.lang = 'en';
+    document.title = 'Layout Comp';
+    return () => {
+      document.documentElement.removeAttribute('lang');
+    };
+  }, []);
   return <div className={'page bg-site text-black bg-cover bg-no-repeat ${sora:variable} font-poppins relative'}>
     
     <InvisibleBackgroundCursor />

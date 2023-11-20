@@ -1,4 +1,5 @@
 import Link from "next/link";
+import React, { useEffect } from 'react';
 
 // data
 
@@ -37,6 +38,15 @@ import { BsArrowRight } from 'react-icons/bs'
 import Image from 'next/image';
 
 const WorkSlider = () => {
+
+  useEffect(() => {
+    document.documentElement.lang = 'en';
+    document.title = 'Work Slider Comp';
+    return () => {
+      document.documentElement.removeAttribute('lang');
+    };
+  }, []);
+  
   return (
     <Swiper
     spaceBetween={10} 

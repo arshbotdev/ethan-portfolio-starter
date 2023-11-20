@@ -1,6 +1,7 @@
 import {Particles} from 'react-tsparticles';
 import { loadFull } from 'tsparticles';
 import react, {useCallback} from 'react';
+import React, { useEffect } from 'react';
 
 const ParticlesContainer = () => {
   const particlesInit = useCallback(async (engine) => {
@@ -9,7 +10,16 @@ const ParticlesContainer = () => {
 
   const particlesLoaded = useCallback(async () => {}, []);
 
+  useEffect(() => {
+    document.documentElement.lang = 'en';
+    document.title = 'Particles Comp';
+    return () => {
+      document.documentElement.removeAttribute('lang');
+    };
+  }, []);
+
   return(
+  
     <Particles 
       className='w-full h-full absolute translate-z-0'
       id='tsparticles' init={particlesInit} loaded={particlesLoaded}

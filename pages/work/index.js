@@ -1,13 +1,29 @@
 import WorkSlider from '../../components/WorkSlider';
 import Bulb from '../../components/Bulb';
 import Circles from '../../components/Circles';
+import Head from 'next/head';
 
 
 import {motion} from 'framer-motion';
 import {fadeIn} from '../../variants';
+import React, { useEffect } from 'react';
 
 const Work = () => {
+
+  useEffect(() => {
+    document.documentElement.lang = 'en';
+    document.title = 'Work Page';
+    return () => {
+      document.documentElement.removeAttribute('lang');
+    };
+  }, []);
+  
   return (
+    <div>
+      <Head>
+        <meta name="description" content="Here are my all the preojects." />
+      </Head>
+
     <div className=' h-full bg-white/90 py-36 flex items-center relative'>
       <Circles />
       <div className='container mx-auto'>
@@ -26,6 +42,7 @@ const Work = () => {
         </div>
       </div>
       <Bulb />
+    </div>
     </div>
   );
 };

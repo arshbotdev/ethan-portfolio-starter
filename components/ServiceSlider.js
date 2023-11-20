@@ -1,4 +1,5 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
+import React, { useEffect } from 'react';
 
 import{
   RxCrop,
@@ -45,6 +46,15 @@ const serviceData = [
 ];
 
 const ServiceSlider = () => {
+
+  useEffect(() => {
+    document.documentElement.lang = 'en';
+    document.title = 'Service Slider Comp';
+    return () => {
+      document.documentElement.removeAttribute('lang');
+    };
+  }, []);
+
   return (
     <Swiper 
       breakpoints={{

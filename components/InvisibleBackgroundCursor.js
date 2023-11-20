@@ -3,6 +3,7 @@ import gsap from 'gsap';
 
 const DynamicCursor = () => {
   useEffect(() => {
+    document.documentElement.lang = 'en';
     const handleMouseMove = (evt) => {
       const mouseX = evt.clientX;
       const mouseY = evt.clientY;
@@ -17,6 +18,9 @@ const DynamicCursor = () => {
         y: mouseY-315,
         stagger: -0.1,
       });
+      return () => {
+        document.documentElement.removeAttribute('lang');
+      };
     };
 
     document.body.addEventListener('mousemove', handleMouseMove);
