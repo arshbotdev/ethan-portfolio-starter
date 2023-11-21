@@ -126,13 +126,13 @@ const About = () => {
 
         <div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6">
 
-          <div className=" flex-1 flex flex-col justify-center relative"> 
+          <div className=" flex-1 flex flex-col justify-center relative py-[100px]"> 
             <motion.h2 variants={fadeIn('right', 0.2)} initial='hidden' animate='show' exit='hidden' className=" h2 text-black"><span className=" text-accent">Journey</span> Till Now.</motion.h2>
             <motion.p variants={fadeIn('right', 0.4)} initial='hidden' animate='show' exit='hidden' className=" text-black">
             Almost three years ago, I began learning <span className=' text-accent'>UI/UX designing</span>  and parallel to that started learning <span className=" text-accent">Web Development</span>  and honed my skills. After that, I began my journey into <span className=" text-accent">Machine Learning</span>  and <span className=" text-accent">Data Analyst</span> by learning and making projects at the same time.
             </motion.p>
             <motion.div variants={fadeIn('right', 0.6)} initial='hidden' animate='show' exit='hidden' className="hidden md:flex md:max-w-xl xl:max-w-none mx-auto xl:mx-0 mb-8">
-              <div className=" flex flex-1 xl:gap-x-6 py-10">
+              <div className=" flex flex-1 xl:gap-x-6 py-0">
                 <div className=" relative flex-1 after:w-1px after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
                   <div className=" text-2xl xl:text-4xl font-extrabold text-accent mb-2">
                     <CountUp start={0} end={2} duration={10} />+

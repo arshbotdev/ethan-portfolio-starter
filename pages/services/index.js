@@ -20,12 +20,12 @@ const Services = () => {
   }, []);
   
   return (
-    <div>
+    <div className=' h-full bg-white/90 py-36 flex items-center px-[120px]'>
       <Head>
         <meta name="description" content="Here I present differnet types of services." />
       </Head>
       
-      <div className=' h-full bg-white/90 py-36 flex items-center'>
+      <div>
         <Circles />
         <div className='container mx-auto relative'>
           <div className='flex flex-col xl:flex-row gap-x-8'>
@@ -37,7 +37,7 @@ const Services = () => {
                 Curious about how I can <span className=' text-accent'>assist your business?</span> Here are a few areas where I <span className=' text-accent'>excel</span>, ensuring you receive the best possible outcomes.
               </motion.p>
             </div>
-            <motion.div variants={fadeIn('down', 0.6)} initial='hidden' animate='show' exit='hidden' className=' w-full xl:max-w-[65%]'>
+            <motion.div variants={fadeIn('down', 0.6)} initial='hidden' animate='show' exit='hidden' className=' w-full xl:max-w-[65%] py-10 '>
               <ServiceSlider />
             </motion.div>
           </div>

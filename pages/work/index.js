@@ -19,12 +19,12 @@ const Work = () => {
   }, []);
   
   return (
-    <div>
+    <div className=' h-full bg-white/90 py-36 flex items-center relative'>
       <Head>
         <meta name="description" content="Here are my all the preojects." />
       </Head>
 
-    <div className=' h-full bg-white/90 py-36 flex items-center relative'>
+    <div className=' '>
       <Circles />
       <div className='container mx-auto'>
         <div className='flex flex-col xl:flex-row gap-x-8'>
