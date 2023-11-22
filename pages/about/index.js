@@ -9,6 +9,8 @@ import Circles from "../../components/Circles";
 import { motion } from 'framer-motion';
 import { fadeIn } from '../../variants';
 
+/* eslint-disable react/jsx-key */
+
 const aboutData = [
   {
     title: 'skills',
