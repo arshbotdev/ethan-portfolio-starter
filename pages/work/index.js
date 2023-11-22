@@ -24,11 +24,11 @@ const Work = () => {
         <meta name="description" content="Here are my all the preojects." />
       </Head>
 
-    <div className=' '>
+    <div className=' px-[170px]  '>
       <Circles />
       <div className='container mx-auto'>
-        <div className='flex flex-col xl:flex-row gap-x-8'>
-          <div className=' text-center flex xl:w-[30vw] flex-col lg:text-left mb-4 xl:mb-0'>
+        <div className='flex flex-col xl:flex-row gap-x-8 '>
+          <div className=' text-center flex xl:w-[30vw] flex-col lg:text-left mb-4 xl:mb-0 py-10' >
             <motion.h2 variants={fadeIn('up', 0.3)} initial='hidden' animate='show' exit='hidden' className='h2 xl:mt-8 text-black'>
               My Projects <span className=' text-accent'>.</span>
             </motion.h2>
@@ -36,7 +36,7 @@ const Work = () => {
             Explore a curated selection of projects that <span className=' text-accent'>reflect my passion</span> for crafting engaging and functional solutions. Each project is a testament to my commitment to <span className=' text-accent'>excellence and innovation</span> in the digital space.
             </motion.p>
           </div>
-          <motion.div variants={fadeIn('down', 0.6)} initial='hidden' animate='show' exit='hidden' className=' w-full xl:max-w-[65%]'>
+          <motion.div variants={fadeIn('down', 0.6)} initial='hidden' animate='show' exit='hidden' className=' w-full xl:max-w-[65%] px-6'>
             <WorkSlider />
           </motion.div>
         </div>
