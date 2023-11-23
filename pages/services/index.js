@@ -13,7 +13,7 @@ const Services = () => {
 
   useEffect(() => {
     document.documentElement.lang = 'en';
-    document.title = 'Servies Page';
+    document.title = 'Servies';
     return () => {
       document.documentElement.removeAttribute('lang');
     };

@@ -15,7 +15,7 @@ const Layout = ({children}) => {
 
   useEffect(() => {
     document.documentElement.lang = 'en';
-    document.title = 'Layout Comp';
+    document.title = 'Akshay Kudalkar';
     return () => {
       document.documentElement.removeAttribute('lang');
     };

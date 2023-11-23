@@ -12,7 +12,7 @@ const Work = () => {
 
   useEffect(() => {
     document.documentElement.lang = 'en';
-    document.title = 'Work Page';
+    document.title = 'Projects';
     return () => {
       document.documentElement.removeAttribute('lang');
     };

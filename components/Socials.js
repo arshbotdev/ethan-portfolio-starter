@@ -1,6 +1,6 @@
 import Link from "next/link";
 import React, { useEffect } from 'react';
-import {RiLinkedinBoxLine, RiInstagramLine, RiTwitterLine, RiDribbbleLine, RiFacebookLine, RiBehanceLine, RiPinterestLine, RiGithubLine } from 'react-icons/ri'
+import {RiLinkedinBoxLine, RiInstagramLine, RiTwitterLine, RiBehanceLine,  RiGithubLine } from 'react-icons/ri'
 
 
 const Socials = () => {
@@ -26,9 +26,6 @@ const Socials = () => {
     </Link>
     <Link href={'https://www.behance.net/akshaykudalkar'} target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-all duration-300 text-black">
       <RiBehanceLine />
-    </Link>
-    <Link href={'https://dribbble.com/Akshaykk12'} target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-all duration-300 text-black">
-      <RiDribbbleLine />
     </Link>
     <Link href={'https://www.instagram.com/akshaykk_12/'} target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-all duration-300 text-black">
       <RiInstagramLine />

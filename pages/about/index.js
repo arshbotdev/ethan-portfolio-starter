@@ -81,7 +81,7 @@ const About = () => {
 
   useEffect(() => {
     document.documentElement.lang = 'en';
-    document.title = 'About Pages';
+    document.title = 'About';
     return () => {
       document.documentElement.removeAttribute('lang');
     };

@@ -18,7 +18,7 @@ import { fadeIn } from '../../variants';
 const Contact = () => {
   useEffect(() => {
     document.documentElement.lang = 'en';
-    document.title = 'Contact Page';
+    document.title = 'Contact';
     return () => {
       document.documentElement.removeAttribute('lang');
     };
