@@ -96,7 +96,7 @@ const About = () => {
 
       <div>
         <Circles />
-        <motion.div variants={fadeIn('right', 0.2)} initial='hidden' animate='show' exit='hidden' className="hidden xl:flex xl:flex-row-reverse absolute -bottom-9 -right-[50px] ">
+        <motion.div variants={fadeIn('right', 0.2)} initial='hidden' animate='show' exit='hidden' className="hidden xl:flex xl:flex-row-reverse absolute -bottom-9 -right-[40px] transform-none  w-[400px] ">
           <Avatar />
         </motion.div>
 
