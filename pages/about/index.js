@@ -91,6 +91,7 @@ const About = () => {
     <div className="h-full bg-white/90 py-32 text-center xl:text-left">
       <Head>
         <meta name="description" content="Detailed description about me." />
+        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
       </Head>
 
       <div>

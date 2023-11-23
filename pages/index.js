@@ -26,6 +26,7 @@ const Home = () => {
     <div className="bg-[#d5d7d9] h-full ">
       <Head>
         <meta name="description" content="This is Home page with a Hero section." />
+        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
       </Head>
 
       <div className=" justify-center align-middle xl:flex py-10">

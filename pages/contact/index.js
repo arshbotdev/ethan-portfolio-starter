@@ -47,6 +47,7 @@ const Contact = () => {
     <div>
       <Head>
         <meta name="description" content="This page is for users to contact me." />
+        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
       </Head>
 
       <div className="h-full bg-white/90 relative">
@@ -96,6 +97,8 @@ const Contact = () => {
                   name="user_email"
                   placeholder="Email"
                   className="input border-[#707070] placeholder-[#707070] bg-white"
+                  autoCapitalize="none"
+                  style={{ textTransform: 'none' }}
                 />
               </div>
               <input
