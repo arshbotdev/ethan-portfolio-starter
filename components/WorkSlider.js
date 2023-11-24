@@ -49,7 +49,7 @@ const WorkSlider = () => {
   
   return (
     <Swiper
-    spaceBetween={10} 
+      spaceBetween={10} 
       pagination={{
         clickable: true,
       }}
@@ -59,7 +59,7 @@ const WorkSlider = () => {
     {workSlides.slides.map((slide, index) =>{
       return (
         <SwiperSlide key={index}>
-          <div className=' grid grid-cols-2 grid-rows-2 gap-4 cursor-pointer'>
+          <div className='grid grid-cols-2 grid-rows-2 gap-4 cursor-pointer overflow-scroll h-[180px] w-[300px] xl:h-[480px] xl:w-[680px]'>
             {slide.images.map((image, index)=> {
               return (
                 <div className=' relative rounded-lg overflow-hidden items-center justify-center group ' key={index}>
