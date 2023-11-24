@@ -17,7 +17,7 @@ import 'swiper/css/pagination';
 import { FreeMode, Pagination } from 'swiper';
 
 // data
-const serviceData = [
+export const serviceData = [
   {
     icon: <RxCrop />,
     title: 'Machine Learning Model Development',
