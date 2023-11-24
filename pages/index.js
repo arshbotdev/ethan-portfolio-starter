@@ -29,7 +29,7 @@ const Home = () => {
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
       </Head>
 
-      <div className=" justify-center align-center xl:flex py-10"> 
+      <div className=" justify-center align-center xl:flex py-24 xl:py-10"> 
       
         <div className="w-[1200px] h-[800px]  absolute -right-[150px] -bottom-[200px]">
           {/* <div className="bg-none xl:bg-cover xl:bg-right xl:bg-no-repeat w-full h-full absolute mix-blend-color-dodge translate-z-0"></div> */}

@@ -20,7 +20,7 @@ const Services = () => {
   }, []);
   
   return (
-    <div className=' h-full bg-[#d5d7d9]  flex sm:py-0 items-center sm:px-0 justify-center py-10'>
+    <div className=' h-full bg-[#d5d7d9]  flex  items-center sm:px-0 justify-center py-24 my-10 xl:py-10 xl:my-0'>
       <Head>
         <meta name="description" content="Here I present differnet types of services." />
       </Head>

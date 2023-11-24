@@ -14,7 +14,7 @@ const Socials = () => {
   }, []);
   
   return (
-    <div className="flex items-center gap-x-5 text-lg">
+    <div className="flex items-center gap-x-5 text-lg xl:pl-[780px]">
     <Link href={'https://github.com/Akshaykk12/'} target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-all duration-300 text-black">
       <RiGithubLine />
     </Link>

@@ -44,7 +44,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="h-full bg-[#d5d7d9] overflow-auto ">
+    <div className="h-full bg-[#d5d7d9] overflow-auto py-10 xl:py-0">
       <Head>
         <meta name="description" content="This page is for users to contact me." />
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
