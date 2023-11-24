@@ -23,7 +23,7 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="bg-[#d5d7d9] h-full ">
+    <div className="bg-[#d5d7d9] h-full overflow-auto">
       <Head>
         <meta name="description" content="This is Home page with a Hero section." />
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
@@ -41,12 +41,12 @@ const Home = () => {
         </div>
         
         <div className="w-full h-full bg-gradiant-to-r from-white/10 via-white/30 to-white/10 relative ">
-          <div className="text-center flex flex-col justify-center xl:pt-40 xl:text-left h-full container mx-auto z-1000 pt-20 ">
-            <motion.h1 variants={fadeIn('down',0.2)} initial="hidden" animate="show" exit="hidden" className="h1 text-[#252422] relative text-left  ">
+          <div className="text-center flex flex-col justify-center  xl:text-left h-full container mx-auto z-1000 mt-20 xl:pt-20 bg-white xl:bg-transparent">
+            <motion.h1 variants={fadeIn('down',0.2)} initial="hidden" animate="show" exit="hidden" className="h1 text-[#252422] relative xl:text-left    ">
               {'Transforming Ideas '} <br/>{'Into '}
               <span className="text-accent">{"Digital Reality"}</span>
             </motion.h1>
-            <motion.p variants={fadeIn('down',0.3)} initial="hidden" animate="show" exit="hidden" className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16 text-black/90">
+            <motion.p variants={fadeIn('down',0.3)} initial="hidden" animate="show" exit="hidden" className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16 text-black/90 xl:px-10">
               {"Hello I'm "}<span className=' text-accent'>{"Akshay Kudalkar"}</span>{", a proficient data scientist based in Pune. With a strong expertise in developing a machine learning model and analyzing it."}
             </motion.p>
             <div className="flex justify-center xl:hidden relative">

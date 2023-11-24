@@ -44,14 +44,14 @@ const Contact = () => {
   };
 
   return (
-    <div>
+    <div className="h-full bg-[#d5d7d9] overflow-auto ">
       <Head>
         <meta name="description" content="This page is for users to contact me." />
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
       </Head>
 
-      <div className="h-full bg-white/90 relative">
-        <div className="container mx-auto py-32 text-center xl:text-left flex items-center justify-center h-full">
+      <div >
+        <div className="container mx-auto my-32 text-center xl:text-left flex items-center justify-center h-full bg-white xl:bg-transparent relative">
           <div className="flex flex-col w-full max-w-[700px] ">
             <motion.h2
               variants={fadeIn('up', 0.3)}

@@ -20,24 +20,24 @@ const Services = () => {
   }, []);
   
   return (
-    <div className=' h-full bg-white/90  flex sm:py-0 items-center sm:px-0  justify-center'>
+    <div className=' h-full bg-[#d5d7d9]  flex sm:py-0 items-center sm:px-0 overflow-visible justify-center py-10'>
       <Head>
         <meta name="description" content="Here I present differnet types of services." />
       </Head>
       
       <div>
         <Circles />
-        <div className='container mx-auto '>
+        <div className='container mx-auto overflow-visible scroll-smooth'>
           <div className='flex flex-col xl:flex-row gap-x-8'>
-            <div className=' text-center flex xl:w-[30vw] flex-col lg:text-left mb-4 xl:mb-0'>
-              <motion.h2 variants={fadeIn('up', 0.3)} initial='hidden' animate='show' exit='hidden' className='h2 xl:mt-8 text-black relative'>
+            <div className=' text-center flex xl:w-[30vw] flex-col lg:text-left mb-4 xl:mb-0  bg-white xl:bg-transparent z-40'>
+              <motion.h2 variants={fadeIn('up', 0.3)} initial='hidden' animate='show' exit='hidden' className='h2 xl:mt-8 text-black relative '>
                 My Services <span className=' text-accent'>.</span>
               </motion.h2>
               <motion.p variants={fadeIn('down',0.3)} initial="hidden" animate="show" exit="hidden" className=" mb-4 max-w-[400px] mx-auto lg:mx-0 text-black/90 relative">
                 Curious about how I can <span className=' text-accent'>assist your business?</span> Here are a few areas where I <span className=' text-accent'>excel</span>, ensuring you receive the best possible outcomes.
               </motion.p>
             </div>
-            <div variants={fadeIn('down', 0.6)} initial='hidden' animate='show' exit='hidden' className=' w-full xl:max-w-[65%] py-10 xs:w-[200px] '>
+            <div variants={fadeIn('down', 0.6)} initial='hidden' animate='show' exit='hidden' className=' w-full xl:max-w-[65%] py-10 xs:w-[200px] z-40'>
               <ServiceSlider />
             </div>
           </div>
