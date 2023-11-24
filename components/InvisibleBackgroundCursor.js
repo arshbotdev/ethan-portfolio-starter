@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import gsap from 'gsap';
+import Image from "next/image";
 
 const DynamicCursor = () => {
   useEffect(() => {
@@ -38,10 +39,8 @@ const DynamicCursor = () => {
       {/* </div> */}
       <div className="content absolute top-0 left-0 flex justify-center items-center h-screen w-screen bg-white/10 mix-blend-screen">
         
-          {/* SVG content goes here */}
           <svg
-        class="desktop-1"
-        // width="1500"
+        className="desktop-1 hidden md:block"
         height="1200"
         viewBox="0 0 1440 1024"
         fill="none"
@@ -87,6 +86,12 @@ const DynamicCursor = () => {
           </clipPath>
         </defs>
       </svg>
+
+      <img
+        className="md:hidden w-[100%] h-[100%]"
+        src="bg-lines.svg"
+        alt="Mobile SVG Image"
+      />
       </div>
     </>
   );

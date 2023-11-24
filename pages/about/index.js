@@ -88,7 +88,7 @@ const About = () => {
   }, []);
 
   return (
-    <div className="h-full bg-white/90 py-32 text-center xl:text-left overflow-auto z-1000">
+  <div className="h-full bg-white/90 py-32 text-center xl:text-left overflow-auto ">
       <Head>
         <meta name="description" content="Detailed description about me." />
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
@@ -102,7 +102,7 @@ const About = () => {
 
         <div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6">
 
-          <div className="flex-1 flex flex-col justify-center relative py-12 xl:py-[100px] bg-white xl:bg-transparent">
+          <div className="flex-1 flex flex-col justify-center relative py-12 xl:py-[100px]">
             <motion.h2 variants={fadeIn('right', 0.2)} initial='hidden' animate='show' exit='hidden' className="h2 text-black"><span className="text-accent">Journey</span> Till Now.</motion.h2>
             <motion.p variants={fadeIn('right', 0.4)} initial='hidden' animate='show' exit='hidden' className="text-black">
               Almost three years ago, I began learning <span className='text-accent'>UI/UX designing</span>  and parallel to that started learning <span className="text-accent">Web Development</span>  and honed my skills. After that, I began my journey into <span className="text-accent">Machine Learning</span>  and <span className="text-accent">Data Analyst</span> by learning and making projects at the same time.

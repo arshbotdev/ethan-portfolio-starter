@@ -51,7 +51,7 @@ const Contact = () => {
       </Head>
 
       <div >
-        <div className="container mx-auto my-32 text-center xl:text-left flex items-center justify-center h-full bg-white xl:bg-transparent relative">
+        <div className="container mx-auto my-32 text-center xl:text-left flex items-center justify-center h-full  relative">
           <div className="flex flex-col w-full max-w-[700px] ">
             <motion.h2
               variants={fadeIn('up', 0.3)}

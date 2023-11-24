@@ -20,16 +20,16 @@ const Services = () => {
   }, []);
   
   return (
-    <div className=' h-full bg-[#d5d7d9]  flex sm:py-0 items-center sm:px-0 overflow-visible justify-center py-10'>
+    <div className=' h-full bg-[#d5d7d9]  flex sm:py-0 items-center sm:px-0 justify-center py-10'>
       <Head>
         <meta name="description" content="Here I present differnet types of services." />
       </Head>
       
       <div>
         <Circles />
-        <div className='container mx-auto overflow-visible scroll-smooth'>
+        <div className='container mx-auto mt-[240px] overflow-auto h-screen pb-24'>
           <div className='flex flex-col xl:flex-row gap-x-8'>
-            <div className=' text-center flex xl:w-[30vw] flex-col lg:text-left mb-4 xl:mb-0  bg-white xl:bg-transparent z-40'>
+            <div className=' text-center flex xl:w-[30vw] flex-col lg:text-left mb-4 xl:mb-0  z-40'>
               <motion.h2 variants={fadeIn('up', 0.3)} initial='hidden' animate='show' exit='hidden' className='h2 xl:mt-8 text-black relative '>
                 My Services <span className=' text-accent'>.</span>
               </motion.h2>

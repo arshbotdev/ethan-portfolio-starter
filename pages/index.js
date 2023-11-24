@@ -41,7 +41,7 @@ const Home = () => {
         </div>
         
         <div className="w-full h-full bg-gradiant-to-r from-white/10 via-white/30 to-white/10 relative ">
-          <div className="text-center flex flex-col justify-center  xl:text-left h-full container mx-auto z-1000 mt-20 xl:pt-20 bg-white xl:bg-transparent">
+          <div className="text-center flex flex-col justify-center  xl:text-left h-full container mx-auto z-1000 mt-20 xl:pt-20 ">
             <motion.h1 variants={fadeIn('down',0.2)} initial="hidden" animate="show" exit="hidden" className="h1 text-[#252422] relative xl:text-left    ">
               {'Transforming Ideas '} <br/>{'Into '}
               <span className="text-accent">{"Digital Reality"}</span>
