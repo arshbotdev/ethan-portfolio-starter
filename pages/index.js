@@ -33,6 +33,14 @@ const Home = () => {
               href="/favicon.svg" 
               type="image/svg+xml" />
       </Head>
+      <motion.div variants={fadeIn('up',0.5)} 
+                  initial="hidden" 
+                  animate="show" 
+                  exit="hidden" 
+                  transition={{duration: 1, ease:'easeInOut'}} 
+                  className=" md:hidden px-10 pt-20 mt-20 justify-center  ">
+        <Avatar/>
+      </motion.div>
 
       <div className="justify-center align-center xl:flex 
                       py-24 xl:py-10"> 
@@ -48,7 +56,7 @@ const Home = () => {
                       exit="hidden" 
                       transition={{duration: 1, ease:'easeInOut'}} 
                       className=" w-full h-full max-w-[737px] 
-                                  absolute -bottom-5 lg:bottom-26 lg:right-[8%]">
+                                  absolute -bottom-5 lg:bottom-26 lg:right-[8%] hidden md:block">
             <Avatar/>
           </motion.div>
         </div>
@@ -61,7 +69,7 @@ const Home = () => {
                           xl:text-left 
                           h-full 
                           container 
-                          mx-auto z-1000 mt-20 xl:pt-20 ">
+                          mx-auto xl:pt-20 ">
             <motion.h1  variants={fadeIn('down',0.2)} 
                         initial="hidden" 
                         animate="show" 
