@@ -9,8 +9,13 @@ const Avatar = () => {
       document.documentElement.removeAttribute('lang');
     };
   }, []);
-  return <div className="hidden xl:flex xl:max-w-none">
-    <Image src={'/akava.png'} width={500} height={300} alt="" className=" translate-x-0 "/>
+  return <div className=" hidden xl:flex 
+                          xl:max-w-none">
+    <Image  src={'/akava.png'} 
+            width={500} 
+            height={300} 
+            alt="" 
+            className=" translate-x-0 "/>
   </div>;
 };
 

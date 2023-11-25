@@ -3,9 +3,6 @@ import emailjs from '@emailjs/browser';
 import { useEffect } from 'react';
 import Head from 'next/head';
 
-const YOUR_PUBLIC_KEY = process.env.YOUR_PUBLIC_KEY;
-const YOUR_SERVICE_ID = process.env.YOUR_SERVICE_ID;
-const YOUR_TEMPLATE_ID = process.env.YOUR_TEMPLATE_ID;
 
 import Circles from '/components/Circles';
 
@@ -30,11 +27,11 @@ const Contact = () => {
     e.preventDefault();
 
     emailjs
-      .sendForm(YOUR_SERVICE_ID, YOUR_TEMPLATE_ID, form.current, YOUR_PUBLIC_KEY)
+      .sendForm("service_1fwvdrl", "template_amrs33t", form.current, "eiI9V5kIlIH63prOw")
       .then(
         (result) => {
           console.log(result.text);
-          e.target.reset();
+          form.current.reset();
           console.log('message sent');
         },
         (error) => {
@@ -44,15 +41,24 @@ const Contact = () => {
   };
 
   return (
-    <div className="h-full bg-[#d5d7d9] overflow-auto py-10 xl:py-0">
+    <div className="h-full py-10 xl:py-0
+                    bg-[#d5d7d9] 
+                    overflow-auto ">
       <Head>
-        <meta name="description" content="This page is for users to contact me." />
-        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+        <meta name="description" 
+              content="This page is for users to contact me." />
+        <link rel="icon" 
+              href="/favicon.svg" 
+              type="image/svg+xml" />
       </Head>
 
       <div >
-        <div className="container mx-auto my-32 text-center xl:text-left flex items-center justify-center h-full  relative">
-          <div className="flex flex-col w-full max-w-[700px] ">
+        <div className="container 
+                        mx-auto my-32 h-full
+                        text-center xl:text-left 
+                        flex items-center justify-center  relative">
+          <div className="flex flex-col
+                          w-full max-w-[700px] ">
             <motion.h2
               variants={fadeIn('up', 0.3)}
               initial="hidden"
@@ -115,12 +121,24 @@ const Contact = () => {
               <button
                 type="submit"
                 value="Send"
-                className="btn rounded-full border border-black/50 max-w-[170px] px-8 transition-all duration-300 flex items-center fill-accent justify-center bg-white overflow-hidden hover:border-accent group"
+                onClick={sendEmail}
+                className=" btn 
+                            rounded-full border 
+                            border-black/50 
+                            max-w-[170px] px-8 
+                            transition-all duration-300 
+                            flex items-center justify-center overflow-hidden
+                            text-white bg-accent  hover:bg-white hover:border-accent group"
               >
-                <span className="group-hover:-translate-y-[120%] group-hover:opacity-0 transition-all duration-500 text-black font-semibold">
+                <span className=" group-hover:-translate-y-[120%] group-hover:opacity-0 transition-all duration-500 
+                                  text-white bg-accent font-semibold">
                   {"Let's talk"}
                 </span>
-                <BsArrowRight className="-translate-y-[120%] opacity-0 group-hover:flex group-hover:-translate-y-0 group-hover:opacity-100 transition-all duration-300 absolute text-[22px]" />
+                <BsArrowRight className=" -translate-y-[120%] 
+                                          text-black opacity-0 
+                                          group-hover:flex group-hover:-translate-y-0 group-hover:opacity-100 transition-all duration-300 
+                                          absolute 
+                                          text-[22px]" />
               </button>
             </form>
           </div>

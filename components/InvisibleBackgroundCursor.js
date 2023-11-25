@@ -33,11 +33,22 @@ const DynamicCursor = () => {
 
   return (
     <>
-      <div className="cursor  w-20 h-20 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 rounded-full"></div>
+      <div className="cursor  
+                      w-20 h-20 absolute top-1/2 left-1/2 
+                      transform -translate-x-1/2 -translate-y-1/2 
+                      rounded-full"></div>
       {/* <div className="shapes h-screen w-screen bg-white overflow-hidden "> */}
-        <div className="shape shape-1 bg-gray-700 w-150 h-150 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 rounded-full"></div>
+        <div className="shape shape-1 
+                        bg-gray-700 
+                        w-150 h-150 absolute top-1/2 left-1/2 
+                        transform -translate-x-1/2 -translate-y-1/2 
+                        rounded-full"></div>
       {/* </div> */}
-      <div className="content absolute top-0 left-0 flex justify-center items-center h-screen w-screen bg-white/10 mix-blend-screen">
+      <div className="content 
+                      absolute top-0 left-0 
+                      flex justify-center items-center 
+                      h-screen w-screen 
+                      bg-white/10 mix-blend-screen">
         
           <svg
         className="desktop-1 hidden md:block"
@@ -82,7 +93,9 @@ const DynamicCursor = () => {
         </g>
         <defs>
           <clipPath id="clip0_1_2">
-            <rect width="1440" height="1024" fill="white" />
+            <rect width="1440" 
+                  height="1024" 
+                  fill="white" />
           </clipPath>
         </defs>
       </svg>
