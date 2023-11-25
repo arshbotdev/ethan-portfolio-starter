@@ -43,7 +43,7 @@ const Home = () => {
       </motion.div>
 
       <div className="justify-center align-center xl:flex 
-                      py-24 xl:py-10"> 
+                      py-24 xl:py-40 "> 
       
         <div className="w-[1200px] h-[800px]  
                         absolute -right-[150px] -bottom-[200px]">
