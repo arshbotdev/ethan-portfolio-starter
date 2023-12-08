@@ -10,15 +10,15 @@ const workSlides = {
       images: [
         {
           title: 'Medsist UI/UX Design',
-          path: '/medsist.png',
+          path: '/Faceswaper.png',
         },
         {
           title: 'Face Swapper',
-          path: '/faceswap.png',
+          path: '/ActionDetection.png',
         },
         {
           title: 'Battleground Lobby',
-          path: '/battleground.png',
+          path: '/SwotAnalysis.png',
         },
       ],
     },
