@@ -9,16 +9,19 @@ const workSlides = {
     {
       images: [
         {
-          title: 'Medsist UI/UX Design',
+          title: 'Face Swaper-',
+          description: 'Will swap faces of the two images.',
           path: '/Faceswaper.png',
         },
         {
-          title: 'Face Swapper',
-          path: '/ActionDetection.png',
+          title: 'Swot Analysis-',
+          description: 'Will do SWOT analysis.',
+          path: '/SwotAnalysis.png',
         },
         {
-          title: 'Battleground Lobby',
-          path: '/SwotAnalysis.png',
+          title: 'Sign Language Detection-',
+          description: 'Will detect sign language.',
+          path: '/ActionDetection.png',
         },
       ],
     },
@@ -65,13 +68,15 @@ const WorkSlider = () => {
               return (
                 <div className='relative  items-center justify-center 
                                 rounded-lg overflow-hidden group ' key={index}>
+                <h7 className='relative items-center justify-center text-accent hidden lg:block'>{image.title}<h9 className=" text-[#121212]">{image.description}</h9> </h7>
                   <div  className=' flex items-center justify-center relative overflow-hidden group'>
                     <Image src={image.path} width={500} height={300} alt="" />
+                    
                     <div className='absolute 
                                     inset-0 
                                     bg-gradient-to-l from-transparent via-[#e838cc] to-[#4a22bd] 
                                     opacity-0 group-hover:opacity-80 
-                                    transition-all duration-700'></div>
+                                    transition-all duration-700 '></div>
                     <div className='absolute 
                                     bottom-0 
                                     translate-y-full group-hover:-translate-y-10 group-hover:xl:-translate-y-20 transition-all duration-300'>
