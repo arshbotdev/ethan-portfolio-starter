@@ -68,7 +68,7 @@ const WorkSlider = () => {
               return (
                 <div className='relative  items-center justify-center 
                                 rounded-lg overflow-hidden group ' key={index}>
-                <h7 className='relative items-center justify-center text-accent hidden lg:block'>{image.title}<h9 className=" text-[#121212]">{image.description}</h9> </h7>
+                <h7 className='relative items-center justify-center text-accent hidden lg:block font-bold'>{image.title}<h9 className=" text-[#121212] font-light">{image.description}</h9> </h7>
                   <div  className=' flex items-center justify-center relative overflow-hidden group'>
                     <Image src={image.path} width={500} height={300} alt="" />
                     
