@@ -12,7 +12,7 @@ import React, { useEffect } from 'react';
 import '../styles/globals.css'
 import '../components/InvisibleBackgroundCursor.css'
 
-
+import { Analytics } from '@vercel/analytics/react';
 
 
 function MyApp({ Component, pageProps }) {
@@ -26,6 +26,7 @@ function MyApp({ Component, pageProps }) {
         <Component {...pageProps} />
       </motion.div>
     </AnimatePresence>
+    <Analytics />
   </Layout>
   )
 }
